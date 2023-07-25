@@ -25,6 +25,12 @@ const Example = () => <Loading />:
 export default Example;
 ```
 
+### Props
+
+| Name | Type | Default value |
+| ---- | ---- | ------------- |
+| Size | Size Props (string) | 2xl |
+
 #### Tests
 
 `npm run test` for simple test
