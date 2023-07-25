@@ -12,8 +12,8 @@
     "test": "jest --watch",
     "coverage": "jest --coverage",
     "lint": "tslint -p tsconfig.json",
-    "prettier": "prettier -c \"src/**/*.ts\"",
-    "fixprettier": "prettier --write \"src/**/*.ts\"",
+    "prettier": "prettier -c \"src/**/*.tsx\"",
+    "fixprettier": "prettier --write \"src/**/*.tsx\"",
     "prepare": "husky install"
   },
   "engines": {
