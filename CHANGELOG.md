@@ -1,4 +1,7 @@
-# 0.2.0
+# Next version
++ Upgrade dependencies
+
+## 0.2.0
 + Add size as props
 
 ## 0.1.0
