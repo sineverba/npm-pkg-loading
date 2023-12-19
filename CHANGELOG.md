@@ -1,5 +1,6 @@
 # Next version
 + Upgrade dependencies
++ Add Next.js version
 
 ## 0.2.0
 + Add size as props

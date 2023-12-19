@@ -1,23 +1,53 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpinner } from "@fortawesome/free-solid-svg-icons";
-import { SizeProp } from "@fortawesome/fontawesome-svg-core";
 
-interface Options {
-  // Size is optional
-  size?: SizeProp;
+const css = `.loading {
+  display: inline-flex;
+  align-items: center;
 }
 
-export const Loading = ({ size = "2xl" }: Options) => (
-  <div
-    style={{
-      backgroundColor: "#FFFFFF",
-      position: "fixed",
-      top: "50%",
-      left: "50%",
-      transform: "translate(-50%, -50%)",
-    }}
-  >
-    <FontAwesomeIcon icon={faSpinner} spin size={size} />
-  </div>
+.loading .spacer {
+  margin-right: 2px;
+}
+
+.loading span {
+  animation-name: blink;
+  animation-duration: 1.4s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 1px;
+}
+
+.loading span:nth-of-type(2) {
+  animation-delay: 0.2s;
+}
+
+.loading span:nth-of-type(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}`;
+
+export const Loading = () => (
+  <>
+    <style>{css}</style>
+    <span className="loading">
+      <span style={{ backgroundColor: "#333333" }} />
+      <span style={{ backgroundColor: "#333333" }} />
+      <span style={{ backgroundColor: "#333333" }} />
+    </span>
+  </>
 );

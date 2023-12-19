@@ -14,6 +14,7 @@ Loading
 
 ### Installation
 `npm install @sineverba/loading@0.2.0` to install generic React version
+`npm install @sineverba/loading@1.0.0` to install Next.js version
 
 ### Usage
 
