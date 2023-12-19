@@ -13,12 +13,12 @@ Loading
 `loading` generates a simple loader to use in React projects.
 
 ### Installation
-`npm install @sineverba/loading`
+`npm install @sineverba/loading@0.1.0` to install generic React version
 
 ### Usage
 
 ```js
-import Loading from "@sineverba/loading";
+import {Loading} from "@sineverba/loading";
 
 const Example = () => <Loading />:
 
