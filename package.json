@@ -1,6 +1,6 @@
 {
   "name": "@sineverba/loading",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Generates a simple loader to use in React projects",
   "main": "dist/index.js",
   "repository": {
